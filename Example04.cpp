@@ -47,5 +47,8 @@ penyebut = 71;
 cout << pembilang << "/" << penyebut << " = ";
 ConvertToLowestTerms(pembilang, penyebut);
 cout << pembilang << "/" << penyebut << endl;
-
+cout << "Masukkan karakter untuk keluar." << endl;
+char wait;
+cin >> wait;
+return 0;
 }
