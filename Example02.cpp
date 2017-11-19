@@ -17,10 +17,19 @@ double inci, meter;
 char ans;
 do
 {
-
+input(kaki, inci);
 cout << "Masukkan Y atau y untuk melanjutkan, tekan apapun untuk berhenti. "
 << endl;
 cin >> ans;
 } while('Y' == ans || 'y' == ans);
 return 0;
 }
+void input(int& kaki, double& inci)
+{
+cout << "Masukkan kaki dalam bilangan bulat: " << flush;
+cin >> kaki;
+cout << "Masukkan inci : " << flush;
+cin >> inci;
+}
+const double meter_per_kaki = 0.3048;
+const double inci_per_kaki = 12.0;
