@@ -14,10 +14,18 @@ int jam, menit;
 char AMPM, ans;
 do
 {
+input(jam, menit);
 cout << "Masukkan Y atau y untuk melanjutkan, tekan apapun untuk berhenti."
 << endl;
 cin >> ans;
 } while('Y'== ans || 'y' == ans);
 return 0;
+}
+void input(int& jam24, int& menit)
+{
+char colon;
+cout << "Masukkan waktu 24 jam dalam format HH: MM "
+<< endl;
+cin >> jam24 >> colon >> menit;
 }
 
