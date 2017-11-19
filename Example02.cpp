@@ -12,5 +12,15 @@ void output(int kai, double inci, double meter);
 
 int main()
 {
+int kaki;
+double inci, meter;
+char ans;
+do
+{
 
+cout << "Masukkan Y atau y untuk melanjutkan, tekan apapun untuk berhenti. "
+<< endl;
+cin >> ans;
+} while('Y' == ans || 'y' == ans);
+return 0;
 }
