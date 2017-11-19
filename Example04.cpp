@@ -26,4 +26,26 @@ return true;
 }
 int main( )
 {
+int pembilang, penyebut;
+pembilang =7;
+penyebut = 4;
+cout << pembilang << "/" << penyebut << " = ";
+ConvertToLowestTerms(pembilang, penyebut);
+cout << pembilang << "/" << penyebut << endl;
+pembilang = 35;
+penyebut = 7;
+cout << pembilang << "/" << penyebut << " = ";
+ConvertToLowestTerms(pembilang, penyebut);
+cout << pembilang << "/" << penyebut << endl;
+pembilang = 40;
+penyebut = 5;
+cout << pembilang << "/" << penyebut << " = ";
+ConvertToLowestTerms(pembilang, penyebut);
+cout << pembilang << "/" << penyebut << endl;
+pembilang = 100;
+penyebut = 71;
+cout << pembilang << "/" << penyebut << " = ";
+ConvertToLowestTerms(pembilang, penyebut);
+cout << pembilang << "/" << penyebut << endl;
+
 }
