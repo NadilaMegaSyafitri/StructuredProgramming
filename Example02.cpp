@@ -19,6 +19,7 @@ do
 {
 input(kaki, inci);
 convert(kaki, inci, meter);
+output(kaki, inci, meter);
 cout << "Masukkan Y atau y untuk melanjutkan, tekan apapun untuk berhenti. "
 << endl;
 cin >> ans;
@@ -38,3 +39,15 @@ void convert(int kaki, double inci, double& meter)
 {
 meter = meter_per_kaki * (kaki + inci/inci_per_kaki);
 }
+void output(int kaki, double inci, double meter)
+{
+//nci, meter ditampilkan sebagai angka dengan dua tempat desimal
+cout.setf(ios::showpoint);
+cout.setf(ios::fixed);
+cout.precision(2);
+cout << "nilai kaki, inci : " << kaki << ","
+<< inci << endl
+<< " diubah menjadi meter, sentimeter : "
+<< meter << endl;
+}
+
