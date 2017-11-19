@@ -10,5 +10,14 @@ void convert(int& jam, char& AMPM);
 void output(int jam, int menit, char AMPM);
 int main()
 {
-	
+int jam, menit;
+char AMPM, ans;
+do
+{
+cout << "Masukkan Y atau y untuk melanjutkan, tekan apapun untuk berhenti."
+<< endl;
+cin >> ans;
+} while('Y'== ans || 'y' == ans);
+return 0;
 }
+
