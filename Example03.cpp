@@ -40,4 +40,10 @@ return mph;
 
 int main()
 {
+cout << "6:30 kaki adalah " << ConvertToMPH(5,30) << " MPH." << endl;
+cout << "7:50 kaki adalah " << ConvertToMPH(7,30) << " MPH." << endl;
+cout << "8:00 kaki adalah " << ConvertToMPH(8,0) << " MPH." << endl;
+cout << "10 kph adalah " << ConvertToMPH(10) << " MPH." << endl;
+cout << "30 kph adalah " << ConvertToMPH(20) << " MPH." << endl;
+cout << "120 kph adalah " << ConvertToMPH(120) << " MPH." << endl << endl;
 }
