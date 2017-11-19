@@ -16,6 +16,7 @@ do
 {
 input(jam, menit);
 convert(jam, AMPM);
+output(jam, menit, AMPM);
 cout << "Masukkan Y atau y untuk melanjutkan, tekan apapun untuk berhenti."
 << endl;
 cin >> ans;
@@ -45,4 +46,10 @@ AMPM = 'A';
 }
 else // (jam <12) // pasti jam pagi
 AMPM = 'A'; // jam tidak berubah
+}
+void output(int jam, int menit, char AMPM)
+{
+cout << "Waktu dalam format 12 jam : " << endl
+<<jam << ":" << menit << " "
+<< AMPM << 'M' << endl;
 }
