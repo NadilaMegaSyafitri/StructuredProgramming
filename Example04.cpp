@@ -37,5 +37,10 @@ penyebut = 7;
 cout << pembilang << "/" << penyebut << " = ";
 ConvertToLowestTerms(pembilang, penyebut);
 cout << pembilang << "/" << penyebut << endl;
+pembilang = 40;
+penyebut = 5;
+cout << pembilang << "/" << penyebut << " = ";
+ConvertToLowestTerms(pembilang, penyebut);
+cout << pembilang << "/" << penyebut << endl;
 
 }
