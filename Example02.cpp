@@ -18,6 +18,7 @@ char ans;
 do
 {
 input(kaki, inci);
+convert(kaki, inci, meter);
 cout << "Masukkan Y atau y untuk melanjutkan, tekan apapun untuk berhenti. "
 << endl;
 cin >> ans;
@@ -33,3 +34,7 @@ cin >> inci;
 }
 const double meter_per_kaki = 0.3048;
 const double inci_per_kaki = 12.0;
+void convert(int kaki, double inci, double& meter)
+{
+meter = meter_per_kaki * (kaki + inci/inci_per_kaki);
+}
